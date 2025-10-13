@@ -514,7 +514,7 @@ def main():
             st.session_state.character_descriptions = {}
             st.session_state.quest_details = ""
             st.session_state.game_step = 0
-            st.experimental_rerun()
+            st.rerun()
         
         st.markdown("---")
         st.markdown("""
@@ -685,7 +685,7 @@ def main():
             st.session_state.max_iterations = max_iterations
             
             st.success("✨ Characters generated! The adventure begins...")
-            st.experimental_rerun()
+            st.rerun()
     
     # Display game if started
     if st.session_state.game_started:
@@ -762,7 +762,7 @@ def main():
                         st.session_state.messages.append((speaker, message))
                         st.session_state.game_step += 1
                         time.sleep(0.5)
-                        st.experimental_rerun()
+                        st.rerun()
             else:
                 st.markdown("""
                 <div class='quest-box'>
