@@ -1,13 +1,27 @@
+# ===============================
 # Core Dependencies
+# ===============================
 streamlit>=1.28.0
 langchain>=0.0.330
 openai>=1.3.0
 python-dotenv>=1.0.0
 
-# Additional LangChain dependencies
+# ===============================
+# Additional LangChain Modules
+# ===============================
+langchain-community>=0.3.0
 langchain-openai>=0.0.2
 tiktoken>=0.5.1
 
-# Optional but recommended
+# ===============================
+# Compatibility & Utility Packages
+# ===============================
 typing-extensions>=4.8.0
 pydantic>=2.0.0
+numpy>=1.26.0
+
+# ===============================
+# Optional: For debugging / tracing
+# ===============================
+tenacity>=8.2.3
+requests>=2.31.0
