@@ -18,7 +18,7 @@ Run:
 import streamlit as st
 import os
 from typing import List, Callable
-from langchain.chat_models import ChatOpenAI
+from langchain_community.chat_models import ChatOpenAI
 from langchain.schema import SystemMessage, HumanMessage
 import time
 
