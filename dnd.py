@@ -19,7 +19,7 @@ import streamlit as st
 import os
 from typing import List, Callable
 from langchain_community.chat_models import ChatOpenAI
-from langchain.schema import SystemMessage, HumanMessage
+from langchain_core.messages import SystemMessage, HumanMessage
 import time
 
 # ===== PAGE CONFIGURATION =====
