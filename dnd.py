@@ -386,7 +386,10 @@ def generate_character_description(character_name: str, game_description: str, w
         ),
     ]
     
-    character_description = ChatOpenAI(temperature=1.0)(character_specifier_prompt).content
+    llm = ChatOpenAI(temperature=1.0)
+    response = llm.invoke(character_specifier_prompt)
+    character_description = response.content
+
     return character_description
 
 
