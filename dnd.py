@@ -270,7 +270,7 @@ class DialogueAgent:
         self.message_history = ["Here is the conversation so far."]
 
     def send(self) -> str:
-        message = self.model(
+        message = self.model.invoke(
             [
                 self.system_message,
                 HumanMessage(content="\n".join(self.message_history + [self.prefix])),
